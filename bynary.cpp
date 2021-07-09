@@ -9,6 +9,7 @@ int* bynary(int number, int* arr, int& i){
 		
 		r = number%2;
   		arr[i++] = r;
+		assert(arr[i] == 0 || arr[i] == 1);
   		number /= 2;
 	}
         
