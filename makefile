@@ -1,7 +1,7 @@
-cpp_main:main.o newmatrix.o upcalculate.o downcalculate.o bynary.o
-	g++ $^ -o ./bin/$@
-%.o:%.cpp
-	mkdir bin
-	g++ -c $^ -o ./bin/$@ 
+./bin/cpp_main:./src/main.o ./src/newmatrix.o ./src/upcalculate.o ./src/downcalculate.o ./src/bynary.o
+	g++ $^ -o $@
+	rm -r ./src/*.o
+./src/%.o:./src/%.cpp
+	g++ -c $^ -o $@
 clean:
-	rm  *.o cpp_main bin 
+	rm  ./src/*.o ./bin/cpp_main
