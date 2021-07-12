@@ -1,10 +1,9 @@
 This is the README file of matrices poject developt by Ashot Nikoghosyan
 
-CONTENTS 
+## CONTENTS 
         1.AUTHOR
         2.DESCRIPTION
         3.COMMANDS
-        
 1. AUTHER 
    ASHOT NIKOGHOSYAN
    contact:
